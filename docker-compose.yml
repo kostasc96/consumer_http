@@ -1,0 +1,12 @@
+services:
+  consumer_http:
+    build: .
+    container_name: consumer_http
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    networks:
+      - kafka_docker_kafka-network
+
+networks:
+  kafka_docker_kafka-network:
+    external: true
