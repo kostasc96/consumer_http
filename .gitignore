@@ -6,6 +6,7 @@
 *.ipr
 *.iws
 .idea
+.bsp
 out
 .cache/
 .history/
